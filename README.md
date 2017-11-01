@@ -1,18 +1,11 @@
-To install:
+Installation:
 
 ```
 # npm install
-# grunt
 ```
 
-To run tests:
+Tests:
 
 ```
-# grunt tests
-```
-
-To run coverage:
-
-```
-# grunt coverage
+# npm run test
 ```

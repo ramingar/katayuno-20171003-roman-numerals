@@ -14,7 +14,7 @@ module.exports = function (grunt) {
                 command: 'rm -rf web/assets/build'
             },
             tests: {
-                command: 'export BABEL_ENV=test && ./node_modules/.bin/babel-tape-runner tests/*.test.js | ./node_modules/.bin/faucet'
+                command: 'export BABEL_ENV=test && ./node_modules/.bin/babel-tape-runner tests/*.test.js | ./node_modules/.bin/tap-spec'
             },
             coverage: {
                 command: 'export BABEL_ENV=test && ./node_modules/.bin/nyc ./node_modules/.bin/babel-tape-runner tests/*.test.js'

@@ -1,10 +1,10 @@
 {
-  "name": "katayuno-20170425",
+  "name": "katayuno-20171003",
   "version": "1.0.0",
-  "main": "web/index.html",
-  "description": "Katayuno día 04 de abril de 2017",
+  "main": "public/index.html",
+  "description": "Katayuno día 03 de octubre de 2017",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "export BABEL_ENV=test && export NODE_ENV=test && ./node_modules/.bin/babel-tape-runner tests/*.test.js | ./node_modules/.bin/tap-spec"
   },
   "keywords": [
     "javascript"
@@ -20,7 +20,6 @@
     "babel-preset-es2015-rollup": "^3.0.0",
     "babel-tape-runner": "^2.0.1",
     "babelrc-rollup": "^3.0.0",
-    "faucet": "0.0.1",
     "grunt": "^1.0.1",
     "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-watch": "^1.0.0",
@@ -32,6 +31,7 @@
     "rollup-plugin-commonjs": "^8.0.2",
     "rollup-plugin-node-resolve": "^2.0.0",
     "rollup-plugin-replace": "^1.1.1",
+    "tap-spec": "^4.1.1",
     "tape": "^4.6.3"
   },
   "dependencies": {
