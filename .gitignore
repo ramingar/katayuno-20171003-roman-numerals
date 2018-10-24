@@ -2,3 +2,4 @@ node_modules
 bower_components
 .nyc_output
 /public/assets/build/
+.idea
